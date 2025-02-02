@@ -10,7 +10,9 @@
     <ul>
       <li *ngFor="let todo of todos" [class.completed]="todo.completed">
         <label class="custom-checkbox">
-          <input type="checkbox" [(ngModel)]="todo.completed" (change)="toggleTodo(todo)" />
+          <input type="checkbox" 
+                 [checked]="todo.completed"
+                 (change)="toggleTodo(todo)" />
           <span class="checkmark"></span>
         </label>
   

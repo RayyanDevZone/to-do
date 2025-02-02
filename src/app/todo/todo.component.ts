@@ -32,6 +32,8 @@ export class TodoComponent {
 
   toggleTodo(todo: Todo) {
     todo.completed = !todo.completed;
+    // Force change detection
+    this.todos = [...this.todos];
   }
 
   removeTodo(id: number) {
