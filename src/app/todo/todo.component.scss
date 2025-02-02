@@ -86,7 +86,18 @@ li {
     }
 
     .checkmark {
-      background: #28a745;
+      background: #007bff !important;
+      border-color: #007bff;
+    }
+
+    .checkmark:after {
+      content: "✔";
+      position: absolute;
+      color: white;
+      font-size: 14px;
+      top: 2px;
+      left: 4px;
+      display: block;
     }
   }
 
@@ -128,18 +139,5 @@ li {
     display: inline-block;
     transition: 0.3s;
     position: relative;
-  }
-
-  input:checked ~ .checkmark {
-    background: #007bff;
-  }
-
-  input:checked ~ .checkmark:after {
-    content: "✔";
-    position: absolute;
-    color: white;
-    font-size: 14px;
-    top: 2px;
-    left: 4px;
   }
 }
