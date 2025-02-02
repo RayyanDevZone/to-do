@@ -1,7 +1,7 @@
 <div class="todo-container">
     <h2>📝 My To-Do List</h2>
     <div class="input-container">
-      <input [(ngModel)]="newTodo" placeholder="Enter a task..." />
+      <input [(ngModel)]="newTodo" placeholder="Enter a task..." (keyup.enter)="addTodo()" />
       <button (click)="addTodo()">
         <i class="material-icons">add</i>
       </button>
