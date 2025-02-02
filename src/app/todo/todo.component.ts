@@ -12,7 +12,7 @@ interface Todo {
   selector: 'app-todo',
   standalone: true,
   templateUrl: './todo.component.html',
-  styleUrls: ['./todo.component.css'],
+  styleUrls: ['./todo.component.scss'],
   imports: [NgFor, FormsModule] // Import required Angular modules directly
 })
 export class TodoComponent {
